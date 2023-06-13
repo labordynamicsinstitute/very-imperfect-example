@@ -1,5 +1,4 @@
-%John M. Abowd and Ian M. Schmutte
-%abowd-schmutte-privacy.tex
+%Lars Vilhuber
 %First: Feb 2013
 %Today: Sep 2014
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -37,9 +36,7 @@
 }
 %--------------------
 \input{formats}
-%\usepackage[named]{algo}
-% suggest \usepackage{algorithm,algorithmic}
-%--------------------
+
 %try to eliminate the stupid * for \thanks in titlepage
 \renewcommand\footnotemark{}
 %--------------------
@@ -84,7 +81,7 @@
 		\begin{center}
 			\textbf{Abstract} \\ [.5cm]
 		\end{center}
-		\input{abstract}
+		%\input{abstract}
 	% ------------------------------ Main Document Body---------------
 	%\onehalfspacing
 	% \newpage
@@ -98,7 +95,6 @@
 \section{Introduction}
 \label{sec:intro}
 \input{introduction}
-%\cite{Machanavajjhala:OTM:ICDE:2008}.
 
 \section{Background}
 \label{sec:background}
@@ -106,7 +102,7 @@
 
 \section{Data}
 \label{sec:Data}
-\input{Data}
+\input{data}
 This paper uses publicly available data from the U.S. Census Bureau. In particular, we use the 2000 Census of Population and Housing: Public Use Microdata 5-Percent Sample. 
 
 
@@ -126,10 +122,10 @@ This paper uses publicly available data from the U.S. Census Bureau. In particul
 
 	\singlespacing
 	% ------------------------------ Bibliography---------------------
-	 \nocite{*}
+	% \nocite{*}
 	% \nocite{cipsea}
-	%\bibliographystyle{plain}
-	%\bibliography{sample.bib}
+	\bibliographystyle{aea-mod}
+	\bibliography{sample.bib}
 
 % Appendix
 %\clearpage
